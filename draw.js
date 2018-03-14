@@ -24,7 +24,7 @@ function setup() {
     // Color based on position:
     var xNorm = x / width * 255;
     var yNorm = y / height * 255;
-    var triad = [0, xNorm, yNorm];
+    var triad = [xNorm * 0.96, xNorm / 1.2, yNorm * 0.96];
 
     // Color brick-red:
     // var triad = [170, 51, 17];
