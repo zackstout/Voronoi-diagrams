@@ -8,9 +8,9 @@ function getRandomColorVal() {
 var colors = [];
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
 
-  for (var k=0; k < 152; k++) {
+  for (var k=0; k < 452; k++) {
     var x = Math.random() * width;
     var y = Math.random() * height;
     seeds.push({x: x, y: y});

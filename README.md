@@ -10,6 +10,8 @@ A rather pleasing effect can be achieved by setting color according to position 
 
 ![screen shot 2018-03-14 at 12 10 14 am](https://user-images.githubusercontent.com/29472568/37384311-2161e29a-271c-11e8-867d-4e5e0ce88d54.png)
 
+![screen shot 2018-03-14 at 12 12 51 am](https://user-images.githubusercontent.com/29472568/37384381-7f912eac-271c-11e8-984b-eb75f88efc60.png)
+
 We can also create some brick-like images -- I'm still trying to get the corners to curve:
 
 ![screen shot 2018-03-14 at 12 04 45 am](https://user-images.githubusercontent.com/29472568/37384186-5d324176-271b-11e8-9d2c-1d9596ddfdce.png)
