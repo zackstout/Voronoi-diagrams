@@ -8,25 +8,32 @@ function getRandomColorVal() {
 var colors = [];
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(400, 400);
 
-  for (var k=0; k < 52; k++) {
+  for (var k=0; k < 152; k++) {
     var x = Math.random() * width;
     var y = Math.random() * height;
     seeds.push({x: x, y: y});
+
+    // Random colors:
     // var triad = [getRandomColorVal(), getRandomColorVal(), getRandomColorVal()];
+
+    // Unicolor:
     // var triad = [100, 100, 100];
 
-    // var xNorm = x / width * 255;
-    // var yNorm = y / height * 255;
-    // var triad = [xNorm, 0, yNorm];
+    // Color based on position:
+    var xNorm = x / width * 255;
+    var yNorm = y / height * 255;
+    var triad = [0, xNorm, yNorm];
 
-    var triad = [170, 51, 17];
+    // Color brick-red:
+    // var triad = [170, 51, 17];
 
     colors.push(triad);
   }
 
-  // seeds = [{x: 20, y: 50}, {x: 200, y: 350}, {x: 120, y: 230}, {x: 70, y: 250}, {x: 230, y: 190} ];
+  // Loop through every pixel:
+  // Example: seeds = [{x: 20, y: 50}, {x: 200, y: 350}, {x: 120, y: 230}, {x: 70, y: 250}, {x: 230, y: 190} ];
   for (var i=0; i < width; i++) {
     for (var j=0; j < height; j++) {
       getMinPoint(i, j);
@@ -49,9 +56,13 @@ function getMinPoint(x, y) {
   noStroke();
   rect(x, y, 1, 1);
   if (diff < 6) {
-    fill('rgb(211, 211, 211)');
-    // fill(colors[pos]);
+    // fill('rgb(211, 211, 211)');
+    fill(colors[pos]);
   } else {
     fill(colors[pos]);
   }
+}
+
+function isPrime(n) {
+
 }
