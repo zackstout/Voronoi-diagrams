@@ -10,16 +10,18 @@ var colors = [];
 function setup() {
   createCanvas(800, 400);
 
-  for (var k=0; k < 40; k++) {
+  for (var k=0; k < 52; k++) {
     var x = Math.random() * width;
     var y = Math.random() * height;
     seeds.push({x: x, y: y});
     // var triad = [getRandomColorVal(), getRandomColorVal(), getRandomColorVal()];
     // var triad = [100, 100, 100];
 
-    var xNorm = x / width * 255;
-    var yNorm = y / height * 255;
-    var triad = [xNorm, 0, yNorm];
+    // var xNorm = x / width * 255;
+    // var yNorm = y / height * 255;
+    // var triad = [xNorm, 0, yNorm];
+
+    var triad = [170, 51, 17];
 
     colors.push(triad);
   }
@@ -46,9 +48,9 @@ function getMinPoint(x, y) {
 
   noStroke();
   rect(x, y, 1, 1);
-  if (diff < 7) {
-    // fill('white');
-    fill(colors[pos]);
+  if (diff < 6) {
+    fill('rgb(211, 211, 211)');
+    // fill(colors[pos]);
   } else {
     fill(colors[pos]);
   }
